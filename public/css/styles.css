@@ -112,6 +112,10 @@ a{
     margin: 1vw 4vw 1vw 4vw;
 }
 
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
+}
+
 .producto img{
     height: 250px;
     width: 65%;
@@ -334,7 +338,3 @@ a{
         flex-wrap: wrap;
     }
 }
-
-/*  
-box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
-*/
