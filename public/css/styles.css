@@ -1,0 +1,251 @@
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 2.5vw;
+}
+
+h2{
+    font-size: 4vw;
+}
+
+a{
+    color: black;
+}
+
+.primero {
+    background-color: #EAC926;
+    color: black;
+    width: 100%;
+}
+
+.parrafo {
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    width: 40%;
+    left: 4.5vw;
+    top: 4.5vw;
+    margin: 0vw 0vw 8vw 0vw;
+}
+
+.buscador{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 3vw;
+}
+
+.buscador input{
+    width: 58%;
+    height: 60px;
+}
+
+.buscador button{
+    width: 4vw;
+    height: 40px;
+}
+
+.lista{
+    position: relative;
+    left: -37px;
+    margin-bottom: 5vw;
+}
+
+.listaIngreso{
+    position: relative;
+    left: -37px;
+}
+
+.burger-menu{
+    width: 9%;
+    height: 60px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 10%;
+}
+
+#barras{
+    font-size: 40px;
+    text-align: center;
+}
+
+.cajaBurger{
+    display: flex;
+    justify-content: center;
+}
+
+.banner{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 34%;
+}
+
+.medio{
+    text-align: center;
+}
+
+.tituloMain{
+    margin: 16vw 0vw 4vw 0vw;
+}
+
+.productos1{
+    display: flex;
+    flex-direction: column;
+}
+
+.productos2{
+
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    height: 1400px;
+    background-color: #ebebeb;
+    margin: 1vw 4vw 1vw 4vw;
+}
+
+.imagenProducto{
+   
+}
+
+.producto i{
+    color: #39b54a;
+    font-size: 6vw;
+}
+
+.precio{
+    font-size: 5vw;
+}
+
+.descuento{
+    color: #39b54a;
+    font-size: 4vw;
+}
+
+.nombre{
+    font-size: 4vw;
+    color: #666;
+}
+
+.infoProducto{
+    text-align: left;
+    margin-left: 11vw;
+}
+
+.infoFooter h2{
+    text-align: center;
+    font-size: 2.3vw;
+    font-weight: bolder;
+}
+
+.infoFooter p{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.iconosFooter{
+    font-size: 7vw;
+    margin: 6vw 0vw 0vw 0vw;
+    text-align: center;
+    color: #1259c3;
+}
+
+.copy p{
+    text-align: center;
+    color: #666;
+    font-size: 1.2vw;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #ebebeb;
+}
+
+.formulario input{
+    font-size: 3vw;
+}
+
+.formulario button{
+    font-size: 3vw;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 400px){
+    .listaIngreso{
+        position: relative;
+        left: -37px;
+    }
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 769px){
+   .burger-menu{
+    display: none;
+   }
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 4000px){
+    .burger-menu{
+    display: none;
+    }
+
+    .formulario{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/*
+Amarillo: #EAC926; 
+Azul: #03264C; 
+Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a;
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px 
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+Debemos agregar estilos al Pie de página:
+● El contenido de todos los artículos está centrado.
+● Los íconos tienen un tamaño de 2em y un margen inferior de separación de 10
+píxeles.
+
+.titular{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+
+box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
+*/
