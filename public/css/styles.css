@@ -4,11 +4,7 @@
 }
 
 p{
-    font-size: 2.5vw;
-}
-
-h2{
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 
 a{
@@ -28,7 +24,7 @@ a{
 .logo{
     display: flex;
     position: relative;
-    width: 40%;
+    width: 50%;
     left: 4.5vw;
     top: 4.5vw;
     margin: 0vw 0vw 8vw 0vw;
@@ -43,12 +39,12 @@ a{
 
 .buscador input{
     width: 58%;
-    height: 60px;
+    height: 35px;
 }
 
 .buscador button{
-    width: 4vw;
-    height: 40px;
+    width: 7.5vw;
+    height: 35px;
 }
 
 .lista{
@@ -64,15 +60,18 @@ a{
 
 .burger-menu{
     width: 9%;
-    height: 60px;
+    height: 30px;
     color: white;
     background-color: #1259c3;
     border-radius: 10%;
+    margin-bottom: 2vw;
 }
 
 #barras{
-    font-size: 40px;
+    font-size: 7vw;
     text-align: center;
+    margin-left: 1vw;
+    margin-top: 0.3vw;
 }
 
 .cajaBurger{
@@ -82,9 +81,8 @@ a{
 
 .banner{
     display: flex;
-    position: relative;
     justify-content: center;
-    width: 34%;
+    height: 21vw;
 }
 
 .medio{
@@ -109,13 +107,14 @@ a{
     flex-direction: column;
     position: relative;
     justify-content: space-around;
-    height: 1400px;
+    height: 600px;
     background-color: #ebebeb;
     margin: 1vw 4vw 1vw 4vw;
 }
 
-.imagenProducto{
-   
+.producto img{
+    height: 250px;
+    width: 65%;
 }
 
 .producto i{
@@ -140,17 +139,22 @@ a{
 .infoProducto{
     text-align: left;
     margin-left: 11vw;
+    opacity: 25%;
+}
+
+.infoProducto:hover{
+    animation: animProducto 4s; 
 }
 
 .infoFooter h2{
     text-align: center;
-    font-size: 2.3vw;
+    font-size: 4.5vw;
     font-weight: bolder;
 }
 
 .infoFooter p{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 3.7vw;
 }
 
 .iconosFooter{
@@ -160,50 +164,169 @@ a{
     color: #1259c3;
 }
 
+.iconosFooter:hover{
+    color: #666;
+}
+
 .copy p{
     text-align: center;
     color: #666;
-    font-size: 1.2vw;
+    font-size: 3vw;
 }
 
 .formulario{
+    margin-top: 6vw;
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: space-around;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     background-color: #ebebeb;
 }
 
 .formulario input{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .formulario button{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
+.bEnviar:hover{
+    background-color: #0022AA;
+    color: white;
+}
+
+@keyframes animProducto {
+    0% { opacity: 0% }
+    100% { opacity:100% }
+}
 
 
 @media screen and (min-width: 100px) and (max-width: 400px){
     .listaIngreso{
-        position: relative;
-        left: -37px;
+       display: none;
     }
 }
 
 
 @media screen and (min-width: 401px) and (max-width: 769px){
+
+    .logo{
+        width: 40%;
+    }
+
    .burger-menu{
     display: none;
    }
+
+   .banner{
+    width: 100%;
+   }
+
+   .producto img{
+    height: 250px;
+    width: 50%;
+    }
 }
 
 
 @media screen and (min-width: 770px) and (max-width: 4000px){
+
+    p{
+        font-size: 2vw;
+    }
+
+    .logo{
+        width: 30%;
+    }
+    
+    .buscador button{
+        width: 3vw;
+        height: 35px;
+    }
+    
+    .buscador input{
+        width: 58%;
+        height: 35px;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
     .burger-menu{
     display: none;
+    }
+
+    .productos1{
+        flex-direction: row;
+    }
+    
+    .productos2{
+        flex-direction: row;
+    }
+
+    .producto{
+        height: 500px;
+        width: 30%;
+        margin: 1vw 4vw 1vw 4vw;
+    }
+    
+    .producto img{
+        height: 200px;
+        width: 50%;
+    }
+    
+    .producto i{
+        font-size: 3vw;
+    }
+    
+    .precio{
+        font-size: 2.5vw;
+    }
+    
+    .descuento{
+        font-size: 2vw;
+    }
+    
+    .nombre{
+        font-size: 2vw;
+    }
+    
+    .infoProducto{
+        text-align: left;
+        margin-left: 2vw;
+    }
+
+    .infoFooter h2{
+        text-align: center;
+        font-size: 1.7vw;
+        font-weight: bolder;
+    }
+    
+    .infoFooter p{
+        font-size: 1.2vw;
+    }
+    
+    .iconosFooter{
+        font-size: 3vw;
+        margin: 6vw 0vw 0vw 0vw;
+    }
+    
+    .copy p{
+        font-size: 1vw;
+    }
+    
+    .todoFooter{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articuloFooter{
+        display: flex;
+        flex-direction: column;
     }
 
     .formulario{
@@ -212,40 +335,6 @@ a{
     }
 }
 
-/*
-Amarillo: #EAC926; 
-Azul: #03264C; 
-Celeste: #1259c3; 
-Gris oscuro: #666; 
-Gris claro: #ebebeb; 
-Verde: #39b54a;
-
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px 
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px
-
-Debemos agregar estilos al Pie de página:
-● El contenido de todos los artículos está centrado.
-● Los íconos tienen un tamaño de 2em y un margen inferior de separación de 10
-píxeles.
-
-.titular{
-    font-size: 24px;
-}
-
-.precio{
-    font-size: 18px;
-}
-
-.descuento{
-    font-size: 16px;
-}
-
-.descripcion{
-    font-size: 16px;
-}
-
+/*  
 box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
 */
